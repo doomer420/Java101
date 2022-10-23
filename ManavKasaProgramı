@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		double armut, elma, domates, muz, patlican,toplamTutar;
+		
+		//kg fiyatlari
+		double armutFiyat = 2.14;
+		double elmaFiyat = 3.67;
+		double domatesFiyat = 1.11;
+		double muzFiyat = 0.95;
+		double patlicanFiyat = 5;
+		
+		//kullanicinin aldigi miktarlari alma...
+		Scanner kilogram = new Scanner(System.in);
+		
+		System.out.print("Armut kac kilo? :");
+		armut = kilogram.nextDouble();
+		
+		System.out.print("Elma kac kilo? :");
+		elma = kilogram.nextDouble();
+		
+		System.out.print("Domates kac kilo? :");
+		domates = kilogram.nextDouble();
+		
+		System.out.print("Muz kac kilo? :");
+		muz = kilogram.nextDouble();
+		
+		System.out.print("Patlican kac kilo? :");
+		patlican = kilogram.nextDouble();
+		
+		// toplam fiyatı hesaplama
+		toplamTutar = armut * armutFiyat + elma * elmaFiyat + domates * domatesFiyat + muz * muzFiyat + patlican * patlicanFiyat;
+		System.out.println("Toplam Tutar: "+toplamTutar + " TL");
+	}
+}
