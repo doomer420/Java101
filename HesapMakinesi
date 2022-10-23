@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int n1, n2;
+
+        System.out.println("1-Toplama islemi\n2-Cikarma islemi\n3-Carpma islemi\n4-Bolme islemi\n");
+
+        System.out.print("1.sayiyi giriniz : ");
+        n1 = s.nextInt();
+        System.out.print("2.sayiyi giriniz : ");
+        n2 = s.nextInt();
+        
+        System.out.println("Yapilacak islemi seciniz(1,2,3 veya 4): ");
+        int islem = s.nextInt();
+
+        switch (islem) {
+            case 1:
+                System.out.println("Cevap : " + (n1 + n2));
+                break;
+            case 2:
+                System.out.println("Cevap : " + (n1 - n2));
+                break;
+            case 3:
+                System.out.println("Cevap : " + (n1 * n2));
+                break;
+            case 4:
+            	System.out.println("Cevap: " + (n1 / n2));
+                break;
+            default:
+                System.out.println("Gecersiz islem");
+               
+        }
+
+    }
+
+}
