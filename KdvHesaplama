@@ -8,16 +8,17 @@ public class Main {
         System.out.print("KDV'si hesaplanacak tutari giriniz: ");
         tutar = input.nextDouble();
 
+/*para miktari 1000den az zise KDV orani %0.18den hesaplanacak....
+ * 1000den fazla ise KDV orani %0.08den hesaplanacak...
+ */
+
+        
         double kdvtutari = tutar < 1000 ? (tutar * kdvorani1) : (tutar*kdvorani2);
         yenitutar = tutar + kdvtutari;
 
         System.out.println("KDV'siz tutar = " + tutar);
         System.out.println("KDV tutari = " + kdvtutari);
         System.out.println("KDV'li tutar = " + yenitutar);
-
-
-
-
 
     }
 }
